@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kianne Mari R. Animas - Developer Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    :root {
+      --primary: #6C63FF;
+      --secondary: #FF6584;
+      --dark: #2F2E41;
+      --light: #F8F9FA;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: var(--light);
+      color: var(--dark);
+      display: flex;
+      flex-direction: column;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+      flex: 1;
+    }
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 3rem;
+      margin: 3rem 0;
+    }
+    .hero-content {
+      flex: 1;
+    }
+    .hero-image {
+      flex: 1;
+      text-align: center;
+    }
+    .profile-pic {
+      width: 300px;
+      height: 300px;
+      border-radius: 20px;
+      object-fit: cover;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+    .logo {
+      width: 70px;
+      height: auto;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+    .greeting {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: var(--primary);
+    }
+    .title {
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin: 0 0 1.5rem 0;
+      line-height: 1.2;
+    }
+    .subtitle {
+      font-size: 1.2rem;
+      color: #666;
+      margin-bottom: 2rem;
+    }
+    .contact-info {
+      margin: 1.5rem 0;
+    }
+    .contact-info p {
+      margin: 0.5rem 0;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .services {
+      margin: 4rem 0;
+    }
+    .services h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      position: relative;
+      display: inline-block;
+    }
+    .services h2::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 50px;
+      height: 4px;
+      background: var(--primary);
+    }
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    .service-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
+    }
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+    .service-card h3 {
+      color: var(--primary);
+      margin-top: 0;
+    }
+    .qr-code {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .qr-code img {
+      width: 120px;
+      height: 120px;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: var(--dark);
+      color: white;
+    }
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+      }
+      .hero-image {
+        order: -1;
+        margin-bottom: 2rem;
+      }
+      .title {
+        font-size: 2.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Logo -->
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/EARIST.svg/1024px-EARIST.svg.png" alt="EARIST Logo" class="logo">
+
+  <div class="container">
+    <section class="hero">
+      <div class="hero-content">
+        <p class="greeting">Hello</p>
+        <h1 class="title">IAm Developer!</h1>
+        <p class="subtitle">Computer Engineering Student | Frontend Focused</p>
+        <div class="contact-info">
+          <p><i class="fas fa-user"></i> Kianne Mari R. Animas</p>
+          <p><i class="fas fa-phone"></i> 0999 677 4896</p>
+          <p><i class="fas fa-briefcase"></i> 12 Completed Projects</p>
+          <p><i class="fas fa-star"></i> 21 years old | 6'0"</p>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="edited-profile.png" alt="Kianne Mari R. Animas" class="profile-pic">
+      </div>
+    </section>
+
+    <section class="services">
+      <h2>Services.</h2>
+      <div class="service-grid">
+        <div class="service-card">
+          <h3>Web Development</h3>
+          <p>Custom websites built with modern technologies tailored to your business needs.</p>
+        </div>
+        <div class="service-card">
+          <h3>Mobile Development</h3>
+          <p>Cross-platform mobile applications for iOS and Android devices.</p>
+        </div>
+        <div class="service-card">
+          <h3>UI/UX Design</h3>
+          <p>Beautiful and functional user interfaces with exceptional user experience.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- QR Code -->
+    <div class="qr-code">
+      <p>Scan to view my portfolio</p>
+      <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://kianneportfolio.com&size=120x120" alt="QR Code">
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Kianne Mari R. Animas. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
